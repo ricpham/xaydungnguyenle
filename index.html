@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xây Dựng Nguyên Lê</title>
+    <title>Trang Chủ | Xây Dựng Nguyên Lê</title>
+    <link rel="icon" href="assets/images/header/logo_thumbnail.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -24,46 +25,6 @@
 </head>
 
 <body>
-    <!-- npx tailwindcss -i assets/tailwindcss/input-tailwind.css -o assets/css/tailwind.css --watch -->
-    <!-- text-[#ffa400] -->
-    <!-- 
-        Responsive:
-        - sm: 640px
-        - md: 768px
-        - lg: 1024px
-        - xl: 1280px
-        - 2xl: 1536px
-        
-        ví dụ màn lg:1024px
-        @media screen and (min-width: 1024px) {
-
-            font-size: 36px;
-        }
-        ví dụ responsive font-size
-        text-4xl sm:text-sm
-     -->
-
-    <!-- Boostrap
-        
-        .col- (extra small devices - screen width less than 576px)
-        .col-sm- (small devices - screen width equal to or greater than 576px)
-        .col-md- (medium devices - screen width equal to or greater than 768px)
-        .col-lg- (large devices - screen width equal to or greater than 992px)
-        .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
-
-        $grid-breakpoints: (
-        // Extra small screen / phone
-        xs: 0,
-        // Small screen / phone
-        sm: 576px,
-        // Medium screen / tablet
-        md: 768px,
-        // Large screen / desktop
-        lg: 992px,
-        // Extra large screen / wide desktop
-        xl: 1200px
-        );
-    -->
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
@@ -80,23 +41,23 @@
             </button>
 
             <a href="#" class="mobile:block laptop:hidden absolute top-0 right-[5%] z-50">
-                <img src="assets/images/header/logo.png" class="h-[80px]" alt="">
+                <img src="assets/images/header/logo_02.jpg" class="h-[80px]" alt="">
             </a>
     
             <div class="collapse navbar-collapse text-white uppercase mobile:text-[16px] laptop:text-[12px] leading-[1rem] pt-[30px] mx-auto mobile:h-[800px] laptop:h-[60px] max-w-[1200px] relative" id="navbarSupportedContent">
 
                 <a href="#" class="mobile:hidden laptop:block absolute top-0 left-0 z-50">
-                    <img src="assets/images/header/logo.png" class="h-[110px]" alt="">
+                    <img src="assets/images/header/logo_02.jpg" class="h-[110px]" alt="">
                 </a>
 
                 <ul class="navbar-nav mx-auto absolute mobile:left-0 laptop:left-auto laptop:right-0 mobile:w-full laptop:w-auto mobile:pl-[12px] laptop:pl-0 mobile:h-[1500px] tablet:h-full laptop:h-auto">
 
                     <li class="nav-item mobile:py-[8px] laptop:py-0 active mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none">
-                        <a href="#" class="nav-link">Trang chủ</a>
+                        <a href="index.html" class="nav-link">Trang chủ</a>
                     </li>
 
                     <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
-                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                        <a href="gioithieu.html" class="nav-link" id="navbarDropdown" role="button">
                             Giới Thiệu
                         </a>
                         
@@ -104,9 +65,9 @@
                         <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
                             <!-- Cầu nối Hover -->
                             <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
-                            <a href="#" class="dropdown-item drop-item relative">
+                            <a href="gioithieu.html" class="dropdown-item drop-item relative">
                                 <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
-                                Con 01
+                                KTS. Nguyễn Trọng Nghĩa
                             </a>
                             <!-- Line divider -->
                             <!-- <div class="dropdown-divider"></div> -->
@@ -121,7 +82,7 @@
                     </li>
 
                     <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
-                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                        <a href="truyenthong.html" class="nav-link" id="navbarDropdown" role="button">
                             TRUYỀN THÔNG
                         </a>
                         
@@ -318,7 +279,6 @@
         </div>
     </header>
 
-    <!-- <div class="content mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%]"> -->
     <div class="content">
 
         <!-- Truyền Thông -->
@@ -1757,13 +1717,16 @@
             </form>
         </div>
 
+        <button id="topBtn" title="Back to top" class="fixed bottom-[12px] right-[12px] z-40 bg-[#1b8f84] h-[44px] w-[44px] mobile:hidden tablet:flex hover:cursor-pointer hover:opacity-50 rounded-full justify-center items-center">
+            
+            <i class="fa-solid fa-arrows-up-to-line text-[#d8eeec] text-[20px] hover:text-white transition-colors hover:animate-bounce duration-300"></i>
+        </button>
+
         <!-- Fixed Phone Calling Mobile -->
         <!-- <span class="desktop-phone"></span> -->
         <a id="floating-mobile-phone" href="tel:+15555555555" class="animate-pulse duration-500 transition-all"></a>
         <!-- End Fixed Items -->
     </footer>
-
-
 
 
     <!-- Optional JavaScript -->

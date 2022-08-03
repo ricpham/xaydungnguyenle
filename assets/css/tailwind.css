@@ -512,6 +512,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.right-\[5px\] {
+  right: 5px;
+}
+
+.bottom-\[5px\] {
+  bottom: 5px;
+}
+
+.right-\[12px\] {
+  right: 12px;
+}
+
+.bottom-\[12px\] {
+  bottom: 12px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -605,6 +621,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 44px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -625,6 +645,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: calc(100% + 15px);
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[44px\] {
+  width: 44px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -636,6 +664,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-translate-y-\[50\%\] {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @-webkit-keyframes ping {
@@ -657,73 +702,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -732,12 +710,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-\[1px\] {
@@ -772,9 +758,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: none;
 }
 
-.border-\[\#9a7b46\] {
+.border-\[\#25bdad\] {
   --tw-border-opacity: 1;
-  border-color: rgb(154 123 70 / var(--tw-border-opacity));
+  border-color: rgb(37 189 173 / var(--tw-border-opacity));
 }
 
 .border-\[\#999\] {
@@ -785,11 +771,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#ccc\] {
   --tw-border-opacity: 1;
   border-color: rgb(204 204 204 / var(--tw-border-opacity));
-}
-
-.border-\[\#25bdad\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(37 189 173 / var(--tw-border-opacity));
 }
 
 .bg-\[\#696969\] {
@@ -806,14 +787,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-\[\#B1A68F\] {
+.bg-\[\#1b8f84\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(177 166 143 / var(--tw-bg-opacity));
+  background-color: rgb(27 143 132 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#9a7b46\] {
+.bg-\[\#25bdad\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(154 123 70 / var(--tw-bg-opacity));
+  background-color: rgb(37 189 173 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f6f6f6\] {
@@ -821,9 +802,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#e8e6e7\] {
+.bg-\[\#d8eeec\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(232 230 231 / var(--tw-bg-opacity));
+  background-color: rgb(216 238 236 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#d00\] {
@@ -836,19 +817,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1b8f84\] {
+.bg-\[\#71cec5\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(27 143 132 / var(--tw-bg-opacity));
+  background-color: rgb(113 206 197 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#25bdad\] {
+.bg-\[\#0c564f\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 189 173 / var(--tw-bg-opacity));
+  background-color: rgb(12 86 79 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#d8eeec\] {
+.bg-\[\#4ba6d6\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(216 238 236 / var(--tw-bg-opacity));
+  background-color: rgb(75 166 214 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -999,6 +980,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 13px;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1037,9 +1022,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#9a7b46\] {
+.text-\[\#25bdad\] {
   --tw-text-opacity: 1;
-  color: rgb(154 123 70 / var(--tw-text-opacity));
+  color: rgb(37 189 173 / var(--tw-text-opacity));
 }
 
 .text-\[\#d00\] {
@@ -1052,24 +1037,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(105 105 105 / var(--tw-text-opacity));
 }
 
-.text-\[\#C1AA81\] {
-  --tw-text-opacity: 1;
-  color: rgb(193 170 129 / var(--tw-text-opacity));
-}
-
-.text-\[\#ccc\] {
-  --tw-text-opacity: 1;
-  color: rgb(204 204 204 / var(--tw-text-opacity));
-}
-
-.text-\[\#25bdad\] {
-  --tw-text-opacity: 1;
-  color: rgb(37 189 173 / var(--tw-text-opacity));
-}
-
 .text-\[\#1b8f84\] {
   --tw-text-opacity: 1;
   color: rgb(27 143 132 / var(--tw-text-opacity));
+}
+
+.text-\[\#75f2e5\] {
+  --tw-text-opacity: 1;
+  color: rgb(117 242 229 / var(--tw-text-opacity));
+}
+
+.text-\[\#d8eeec\] {
+  --tw-text-opacity: 1;
+  color: rgb(216 238 236 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -1098,40 +1078,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 500ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
-.duration-\[5000\] {
-  transition-duration: 5000;
-}
-
-.duration-\[15000\] {
-  transition-duration: 15000;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 
-.hover\:animate-spin:hover {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+.hover\:animate-ping:hover {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.hover\:animate-bounce:hover {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:bg-\[\#9a7b46\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(154 123 70 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#25bdad\]:hover {
@@ -1144,14 +1148,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(221 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#9a7b46\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(154 123 70 / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#25bdad\]:hover {
   --tw-text-opacity: 1;
   color: rgb(37 189 173 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
@@ -1169,6 +1173,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 640px) {
@@ -1311,20 +1319,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
-  .tablet\:h-auto {
-    height: auto;
-  }
-
-  .tablet\:h-\[1300px\] {
-    height: 1300px;
-  }
-
-  .tablet\:h-\[1400px\] {
-    height: 1400px;
-  }
-
-  .tablet\:h-\[1500px\] {
-    height: 1500px;
+  .tablet\:flex {
+    display: flex;
   }
 
   .tablet\:h-full {

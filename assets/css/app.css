@@ -62,6 +62,13 @@ a#floating-mobile-phone { display:none; }
     border-width: 2px 2px 0 0;
     border-radius: 0 6px 0 0;
 }
+
+#topBtn {
+
+    opacity: 1;
+    transition: 1s;
+}
+
 /* End Fixed Document */
 
 /* Header */
