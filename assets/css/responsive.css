@@ -1,0 +1,92 @@
+/* Desktop > 1600PX */
+@media only screen and (min-width:1600px){
+
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1200px) and (max-width:1599px){
+
+
+}
+
+/* Tablet-sm */
+@media only screen and (min-width: 992px) and (max-width:1199px){
+
+
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 767px) and (max-width:991px){
+
+
+}
+
+/* Mobile-sm */
+@media only screen and (min-width: 576px) and (max-width:767px){
+
+
+}
+
+/* Mobile */
+@media only screen and (max-width:575.9px){
+
+        a#floating-mobile-phone {
+            /*theming-related: colors, fonts, sizing, etc. edit at will*/
+            color:#fff;
+            text-align:center;
+            font-size:18px;
+            /*positioning-related: don't edit unless you're css-confident*/
+            display:block;
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:72px;
+            height: 50px;
+            z-index:50;
+            background: #029900;
+            border: solid 2px #22c61a;
+            border-width: 2px 2px 0 0;
+            border-radius: 0 30px 0 0;
+        }
+
+        a#floating-mobile-phone::after {
+
+            content: '';
+            display: block;
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            top: 6px;
+            left: 18px;
+            background: transparent url(../images/fixed/phone_calling.png) no-repeat scroll 50% 50%;
+            background-size: auto 100%;
+        }
+}
+
+
+/* CUSTOM RANGE DEVICE */
+
+/* Navbar Header */
+/* Tablet-sm 992px > */
+@media only screen and (min-width: 992px)  {
+
+    /* Header */
+    .nav-border {
+
+        border-left: 2px solid #666;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 1199.9px) {
+    
+    .dropdown-menu {
+        display: block;
+    }
+    .navbar-collapse {
+        
+        overflow-y: scroll;
+        z-index: 49;
+    }
+}
