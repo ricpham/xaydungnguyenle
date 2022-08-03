@@ -1,0 +1,219 @@
+body {
+
+    font-family: "Popins", sans-serif;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ScrollBar Thumb */
+
+body::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+    background-image: linear-gradient(to bottom, rgb(215, 148, 119), #B1A68F);
+    border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track {
+
+    background-color: #ccc;
+    border-radius: 100rem;
+
+    
+}
+
+/* END ScrollBar Thumb */
+
+
+/* Fixed Document */
+a#floating-mobile-phone { display:none; }
+
+.bottom-to-top {
+
+    transform: translateY(110%);
+    transition: 1s;
+}
+
+.bottom-to-top.active {
+
+    transform: translateY(0);
+}
+
+.top-to-bottom {
+
+    transform: translateY(0);
+    transition: 1s;
+}
+
+.top-to-bottom.active {
+
+    transform: translateY(110%);
+}
+
+#ask-btn {
+    border: solid 1px #dd0000;
+    border-width: 2px 2px 0 0;
+    border-radius: 0 6px 0 0;
+}
+/* End Fixed Document */
+
+/* Header */
+
+    /* Navbar */
+
+.nav-link {
+    display: inline;
+}
+
+.nav-item:hover .nav-link {
+
+    color: #aaa;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-item.active {
+
+    color: #aaa;
+}
+
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+
+
+.nav-item a {
+
+    text-decoration: none;
+}
+
+.nav-header {
+
+    background: transparent url(../images/header/bg_navbar.png) repeat scroll 0 0;
+}
+
+.nav-drop {
+
+    background: transparent url(../images/header/bg_navbar.png) repeat scroll 0 0;
+    
+}
+
+.drop-item {
+
+    border-bottom: dotted 1px #666;
+    color: white;
+}
+
+.drop-item:hover {
+
+    color: #aaa;
+    background: transparent url(../images/header/bg_navbar.png) repeat scroll 0 0;
+    background-color: none !important;
+}
+
+.drop-item:last-child {
+
+    border-bottom: none;
+}
+
+    /* End Navbar */
+
+    /* Banner */
+
+.owl-banner .owl-dots {
+
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-banner .owl-dots .owl-dot > span{
+    width: 18px;
+    height: 22px;
+    background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #B1A68F;
+}
+    /* End Banner */
+/* End Header */
+
+
+/* Content */
+    /* Section One */
+.section-title {
+
+    min-width: 100px;
+    display: inline-block;
+    background: #B1A68F;    
+    transform: skewX(-40deg);
+}
+
+.section-text {
+
+    display: inline-block;   
+    transform: skewX(40deg);
+}
+
+.card-hidden { 
+
+    background:rgba(0,0,0,.7) center / cover;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+
+}
+
+.card-img:hover > .card-hidden {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+
+    /* End Section One */
+
+
+    /* SECTION TWO */
+.card-desc--02::before {
+
+    top: -8px;
+    left: -30px;
+    background-image: url(../images/section_02/quote_left.png);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 26px;
+    height: 20px;
+}
+
+.card-desc--02::after {
+
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/section_02/quote_right.png);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 26px;
+    height: 20px;
+}
+
+
+    /* END SECTION TWO */
+
+/* End Content */
+
+
