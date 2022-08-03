@@ -528,10 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 40;
 }
 
-.order-first {
-  order: -9999;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -642,6 +638,96 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .items-center {
   align-items: center;
 }
@@ -701,6 +787,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(204 204 204 / var(--tw-border-opacity));
 }
 
+.border-\[\#25bdad\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 189 173 / var(--tw-border-opacity));
+}
+
 .bg-\[\#696969\] {
   --tw-bg-opacity: 1;
   background-color: rgb(105 105 105 / var(--tw-bg-opacity));
@@ -743,6 +834,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1b8f84\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 143 132 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#25bdad\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 189 173 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d8eeec\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 238 236 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -851,20 +957,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 16px;
 }
 
-.pt-\[12px\] {
-  padding-top: 12px;
-}
-
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-justify {
@@ -959,6 +1057,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(193 170 129 / var(--tw-text-opacity));
 }
 
+.text-\[\#ccc\] {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
+.text-\[\#25bdad\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 189 173 / var(--tw-text-opacity));
+}
+
+.text-\[\#1b8f84\] {
+  --tw-text-opacity: 1;
+  color: rgb(27 143 132 / var(--tw-text-opacity));
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -985,6 +1098,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 500ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[5000\] {
+  transition-duration: 5000;
+}
+
+.duration-\[15000\] {
+  transition-duration: 15000;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover\:animate-spin:hover {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -992,6 +1132,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-\[\#9a7b46\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(154 123 70 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#25bdad\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 189 173 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#d00\]:hover {
@@ -1002,6 +1147,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-\[\#9a7b46\]:hover {
   --tw-text-opacity: 1;
   color: rgb(154 123 70 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#25bdad\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 189 173 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
@@ -1033,16 +1183,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 0px;
   }
 
+  .mobile\:order-3 {
+    order: 3;
+  }
+
   .mobile\:order-1 {
     order: 1;
   }
 
   .mobile\:order-2 {
     order: 2;
-  }
-
-  .mobile\:order-3 {
-    order: 3;
   }
 
   .mobile\:mx-\[8\%\] {
@@ -1068,6 +1218,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mobile\:h-\[800px\] {
     height: 800px;
+  }
+
+  .mobile\:h-\[1500px\] {
+    height: 1500px;
   }
 
   .mobile\:w-full {
@@ -1132,12 +1286,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .tablet\:order-2 {
-    order: 2;
-  }
-
   .tablet\:order-1 {
     order: 1;
+  }
+
+  .tablet\:order-2 {
+    order: 2;
   }
 
   .tablet\:order-3 {
@@ -1155,6 +1309,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:block {
     display: block;
+  }
+
+  .tablet\:h-auto {
+    height: auto;
+  }
+
+  .tablet\:h-\[1300px\] {
+    height: 1300px;
+  }
+
+  .tablet\:h-\[1400px\] {
+    height: 1400px;
+  }
+
+  .tablet\:h-\[1500px\] {
+    height: 1500px;
+  }
+
+  .tablet\:h-full {
+    height: 100%;
   }
 
   .tablet\:w-full {
@@ -1203,6 +1377,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 60px;
   }
 
+  .laptop\:h-auto {
+    height: auto;
+  }
+
   .laptop\:w-auto {
     width: auto;
   }
@@ -1245,14 +1423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1440px) {
   .laptop-sm\:h-\[800px\] {
     height: 800px;
-  }
-
-  .laptop-sm\:h-full {
-    height: 100%;
-  }
-
-  .laptop-sm\:w-full {
-    width: 100%;
   }
 }
 

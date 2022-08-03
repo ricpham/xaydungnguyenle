@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
 
-    background-image: linear-gradient(to bottom, rgb(215, 148, 119), #B1A68F);
+    background-image: linear-gradient(to bottom, rgb(137, 219, 233), #1b8f84);
     border-radius: 100rem;
 }
 
@@ -141,7 +141,7 @@ a#floating-mobile-phone { display:none; }
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #B1A68F;
+    background: #1b8f84;
 }
     /* End Banner */
 /* End Header */
@@ -153,7 +153,7 @@ a#floating-mobile-phone { display:none; }
 
     min-width: 100px;
     display: inline-block;
-    background: #B1A68F;    
+    background: #1b8f84;    
     transform: skewX(-40deg);
 }
 
