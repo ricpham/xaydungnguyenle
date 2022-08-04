@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ | Xây Dựng Nguyên Lê</title>
+    <link rel="icon" href="assets/images/header/logo_thumbnail.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0"
+        nonce="hJbLmUJX"></script>
+
+    <header>
+        <!-- Responsive Navbar -->
+        <nav class="navbar navbar-expand-xl bg-[#696969] nav-header fixed w-full z-50 p-0">
+
+            <button class="navbar-toggler border-none py-[20px]" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+
+                <img src="assets/images/header/nav_mobile.png" alt="">
+            </button>
+
+            <a href="index.html" class="mobile:block laptop:hidden absolute top-0 right-[5%] z-50">
+                <img src="assets/images/header/logo_02.jpg" class="h-[80px]" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse text-white uppercase mobile:text-[16px] laptop:text-[12px] leading-[1rem] pt-[30px] mx-auto mobile:h-[800px] laptop:h-[60px] max-w-[1200px] relative"
+                id="navbarSupportedContent">
+
+                <a href="index.html" class="mobile:hidden laptop:block absolute top-0 left-0 z-50">
+                    <img src="assets/images/header/logo_02.jpg" class="h-[110px]" alt="">
+                </a>
+
+                <ul
+                    class="navbar-nav mx-auto absolute mobile:left-0 laptop:left-auto laptop:right-0 mobile:w-full laptop:w-auto mobile:pl-[12px] laptop:pl-0 mobile:h-[1500px] tablet:h-full laptop:h-auto">
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="gioithieu.html" class="nav-link" id="navbarDropdown" role="button">
+                            Giới Thiệu
+                        </a>
+
+
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]"
+                            aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="gioithieu.html" class="dropdown-item drop-item relative">
+                                <i
+                                    class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                KTS. Nguyễn Trọng Nghĩa
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i
+                                    class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 02
+                            </a>
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i
+                                    class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 03</a>
+                        </div>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="truyenthong.html" class="nav-link" id="navbarDropdown" role="button">
+                            TRUYỀN THÔNG
+                        </a>
+
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="camnhan.html" class="nav-link" id="navbarDropdown" role="button">
+                            Cảm nhận KH
+                        </a>
+
+
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="thietke.html" class="nav-link" id="navbarDropdown" role="button">
+                            Thiết kế
+                        </a>
+
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]"
+                            aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="#" class="dropdown-item drop-item">
+                                THIẾT KẾ NHÀ PHỐ - BIỆT THỰ
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Thi công
+                        </a>
+
+
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]"
+                            aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="#" class="dropdown-item drop-item">
+                                Con 01
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Xưởng gỗ
+                        </a>
+
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 active mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Gói dịch vụ
+                        </a>
+
+
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]"
+                            aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="chitietthietke.html" class="dropdown-item drop-item active">
+                                ĐƠN GIÁ THIẾT KẾ
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Hoạt động - tin tức
+                        </a>
+
+
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]"
+                            aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="#" class="dropdown-item drop-item">
+                                Con 01
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Tư vấn bản vẽ
+                        </a>
+
+                    </li>
+
+                    <li
+                        class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Liên hệ
+                        </a>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner pb-2 border-b-2 solid border-[#25bdad]">
+            <div class="owl-carousel owl-theme owl-banner relative">
+                <!-- Item 1 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_01.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+
+                <!-- Item 2 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_02.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+
+                <!-- Item 3 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_03.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <!-- Thiết Kế -->
+        <section class="section-seven mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%] pt-[25px]">
+            <div class="section-header mobile:w-[94%] tablet:w-full flex justify-between items-center">
+                <a href="#"
+                    class="section-title uppercase bg-[#1b8f84] inline-block text-white text-[15px] leading-[23px] relative min-w-[100px] px-[34px] py-[2px] hover:bg-[#25bdad] transition-colors duration-300 -ml-[3px]">
+                    <span class="section-text font-['Myriad-Pro'] text-center">Gói Thiết Kế Nội Ngoại Thất</span>
+                </a>
+            </div>
+
+            <div class="section-content mt-[12px]">
+
+                <div class="row">
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; font-size: 11px; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span style="color:#696969;"><strong
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">&nbsp;I.
+                                Nhà Ở Gia Đình và thể loại công trình khác:</strong><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;Nhà
+                                Phố : 150.000đ/m2 - 250.000 đ/m2&nbsp;( Giảm 50% phí thiết kế khi Kiến Trúc Mới
+                                thi công)</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;Biệt
+                                Thự : 250.000 đ/m2 - 320.000đ/m2&nbsp;</span></span><span
+                            style="color: rgb(105, 105, 105); font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">(
+                            Giảm 50% phí thiết kế khi Kiến Trúc Mới thi công)</span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; font-size: 11px; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span
+                            style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify; color: rgb(105, 105, 105);">&nbsp;Nội
+                            thất : 180.000đ/m2 &nbsp;- 250.000đ/m2 &nbsp;(Giảm 50% phí thiết kế khi Kiến Trúc
+                            Mới thi công).</span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; font-size: 11px; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span
+                            style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify; color: rgb(105, 105, 105);">&nbsp;Thể
+                            loại kiến trúc khác như cafe, văn phòng, bệnh viện... : sẽ báo giá cụ thể theo từng
+                            đặc thù công trình.</span>
+                    </p>
+                    <p>
+                        <span
+                            style="font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 18px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;</span></span><span
+                            style="font-size: 12.960000038147px; color: rgb(105, 105, 105); font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">Đ</span><span
+                            style="font-family: Verdana, Geneva, sans-serif; line-height: 18px; font-size: 11px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">ơn
+                                giá trên có khoảng dao động và công ty sẽ báo giá chính xác dựa trên diện tích
+                                thiết kế cụ thể và hình thức kiến trúc theo yêu cầu.</span></span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span style="font-size: 11px; color: rgb(105, 105, 105);"><strong
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">&nbsp;
+                                II. Hồ Sơ Thiết Kế Gồm:</strong><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp;&nbsp;</span><em
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">1.
+                                Thiết kế sơ bộ:</em><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp;&nbsp;</span><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;-
+                                Tổng thể công trình + phân tích</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mặt bằng các tầng + thuyết minh</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Cơ cấu tổ chức không gian và các bản vẽ khác (nếu cần) để làm rõ ý đồ thiết
+                                kế.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Ảnh minh họa trên máy tính để hiểu rõ hơn về ý đồ thiết kế.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Hồ sơ sơ bộ có thể có 1 hoặc 2 phương án tuỳ vào tính chất công trình.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;</span><em
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">&nbsp;
+                                2. Hồ sơ phát triển ý tưởng:</em><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Sau khi thống nhất phương án sơ bộ, hai bên ký nhận vào phương án sơ bộ. Chúng
+                                tôi sẽ triển khai hồ sơ phát triển ý tưởng cho</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; khách hàng, hồ sơ bao gồm:</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mặt bằng, mặt cắt, mặt đứng công trình</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Phối cảnh công trình</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mô tả vật liệu dùng cho thi công (sơ bộ)</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;</span><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;</span><em
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">3.
+                                Hồ sơ kiến trúc:</em><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Hồ sơ bao gồm:</span></span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span style="font-size: 11px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mặt bằng, mặt cắt, mặt đứng công trình</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Phối cảnh công trình</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mô tả vật liệu dùng cho thi công</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Chi tiết kiến trúc</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Chi tiết cửa, chi tiết vệ sinh, chi tiết lan can, thang...</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Mặt bằng bố trí nội thất, lát sàn, trần</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Hai bên sẽ có một thời gian làm việc để thống nhất các chi tiết thiết kế trước
+                                khi triển khai hồ sơ thiết kế kỹ thuật thi công đầy đủ.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <strong
+                                style="border: 0px; margin: 0px; padding: 0px; font-size: 12.960000038147px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; text-align: justify;">&nbsp;
+                                III. Thiết kế kỹ thuật thi công:</strong><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Sau khi thống nhất hồ sơ phát triển ý tưởng. Chúng tôi sẽ triển khai hồ sơ thiết
+                                kế kỹ thuật thi công cho khách hàng. Hồ sơ bao gồm:</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Hồ sơ kiến trúc (Các mặt bằng, các mặt đứng, các mặt cắt và phối cảnh công
+                                trình).</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Hồ sơ chi tiết (Chi tiết vệ sinh, chi tiết
+                                thang, chi tiết lan can tay vịn, chi tiết gờ phào....).</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Hồ sơ Nội thất (Mặt bằng lát sàn, mặt bằng trần những phòng đặc biệt, mặt bằng
+                                kê đồ nội thất).</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Hồ sơ tính toán kết cấu, bóc tách khối lượng thép cần theo từng giai
+                                đoạn.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Hồ sơ thiết kế điện,&nbsp;</span></span><span
+                            style="color: rgb(105, 105, 105); font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">điện
+                            thoại, internet, tivi.</span><br
+                            style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                        <span style="font-size: 11px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Hồ sơ thiết kế nước.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Các bản vẽ thiết kế chống sét, báo cháy,
+                                báo khói, PCCC được báo giá thiết kế riêng.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Hồ sơ đầy đủ để khách hàng dùng để thi công</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; - Riêng với hồ sơ thiết kế cải tạo có
+                                thêm bản vẽ hiện trạng, bản vẽ đập phá.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Với hồ sơ thiết kế chi tiết nội thất có thêm phối cảnh từng phòng, thể hiện rõ
+                                cơ cấu không gian từng phòng, các bản vẽ thiết</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                kế chi tiết đồ đạc trong từng phòng</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp;&nbsp;</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Hồ sơ được in thành 3 bộ A3 gồm 1 bộ gốc có dấu và chữ ký của các thành viên
+                                tham gia thiết kế và hai bộ photocopy của bộ</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                gốc. Bên thiết kế hoàn toàn chịu trách nhiệm về hồ sơ thiết kế trước pháp luật.
+                                Khách hàng bảo quản hồ sơ gốc, mọi chỉnh sửa phải</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                được bên thiết kế đồng ý vào hồ sơ gốc.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Giá trên hợp đồng chưa bao gồm chi phí triển khai hồ sơ xin phép xây dựng tương
+                                ứng 15% phí thiết kế</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Giá trên chưa bao gồm thuế VAT 10% (nếu khách hàng yêu cầu)</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Giá trên chưa bao gồm phí mua bản quyền thiết kế để dùng cho các công trình
+                                khác.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - Khi công trình cách trụ sở chính công ty quá 25km. Hai bên sẽ thỏa thuận về
+                                chi phí công tác giám sát quyền tác giả của Kiến trúc sư. Số lần đến giám sát
+                                công&nbsp;</span></span><span
+                            style="color: rgb(105, 105, 105); font-family: Arial, Helvetica, sans-serif; font-size: 12.96px; text-align: justify;">trình
+                            phù hợp theo tiến độ thi công.</span><span
+                            style="font-family: Arial, Helvetica, sans-serif; font-size: 12.96px; text-align: justify; color: rgb(105, 105, 105);">&nbsp;
+                            &nbsp; &nbsp;&nbsp;</span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span style="font-size: 11px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Tiến độ hợp đồng đuợc tính bằng tổng số
+                                ngày triển khai các giai đoạn. Không tính thời gian hai bên trao đổi, thống nhất
+                                phương án.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Khi có thay đổi, phát sinh thiết kế, hồ sơ
+                                cũ được thu lại trước khi xuất hồ sơ mới. Phần thay đổi, phát sinh được tính chi
+                                phí phát sinh tương ứng với khối lượng thay đổi, phát sinh.</span><br
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">
+                            <span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">&nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Chủ đầu tư hoàn toàn chịu trách nhiệm trước
+                                những sai phạm do tự ý thay đổi thiết kế mà không có sự đồng ý của bên thiết
+                                kế.</span></span>
+                    </p>
+                    <p
+                        style="font-family: Verdana, Geneva, sans-serif; color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 0px; line-height: 18px;">
+                        <span style="font-size: 11px; color: rgb(105, 105, 105);"><span
+                                style="font-family: Arial, Helvetica, sans-serif; font-size: 12.960000038147px; line-height: 20px; text-align: justify;">CÔNG
+                                TY TNHH TƯ VẤN THIẾT KẾ - XÂY DỰNG&nbsp;<strong>KIẾN TRÚC
+                                    MỚI.</strong></span></span>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- END Thiết Kế -->
+
+        <!-- Các Gói Khác -->
+        <section class="section-seven mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%] pt-[25px]">
+            <div class="section-header mobile:w-[94%] tablet:w-full flex justify-between items-center">
+                <a href="#"
+                    class="section-title uppercase bg-[#1b8f84] inline-block text-white text-[15px] leading-[23px] relative min-w-[100px] px-[34px] py-[2px] hover:bg-[#25bdad] transition-colors duration-300 -ml-[3px]">
+                    <span class="section-text font-['Myriad-Pro'] text-center">Các Gói Khác</span>
+                </a>
+            </div>
+
+            <div class="section-content mt-[12px]">
+
+                <div class="row">
+
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_01.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    CÁ TÍNH CỦA KHÔNG GIAN SỐNG
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_02.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    ÁNH SÁNG VÀ SỰ TĨNH LẶNG
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_03.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    ĐỒNG ĐIỆU CẢM XÚC
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_01.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    CÁ TÍNH CỦA KHÔNG GIAN SỐNG
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_02.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    ÁNH SÁNG VÀ SỰ TĨNH LẶNG
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="col-sm-6 col-md-4 col-lg-4 pl-0">
+                        <div class="card card-item border-none rounded-0">
+                            <a href="#" class="card-img relative">
+                                <img class="" src="assets/images/lazy/temp_image.jpg"
+                                    lazy-src="assets/images/section_07/image_03.png" alt="Card image cap">
+
+                                <div
+                                    class="card-hidden absolute top-0 text-white w-full h-full text-left px-[20px] pt-[26px] tablet:text-[12px] tablet-sm:text-sm">
+                                    Chủ đầu tư: Chị xxx<br>Địa chỉ: TP.HCM<br>Thiết kế: KTS Nguyễn Trọng Nghĩa &amp;
+                                    cộng sự.<br>Công Ty TNHH Tư Vấn, Thiết Kế - Xây Dựng Xây Dựng Nguyễn Lê
+                                </div>
+                            </a>
+
+                            <div class="pt-[4px] pb-[12px] z-10">
+                                <a href="#"
+                                    class="card-title text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] transition-colors duration-300 uppercase">
+                                    ĐỒNG ĐIỆU CẢM XÚC
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- End Các Gói Khác   -->
+
+    </div>
+
+    <footer>
+        <div class="footer-wrapper mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%] py-[25px]">
+            <div
+                class="footer-row row py-[10px] border-double border-t-[5px] border-[#25bdad] w-[calc(100%+15px)] overflow-x-hidden">
+                <!-- Col One -->
+                <div class="col-xs-12 col-md-5 col-lg-5 pl-0 mobile:order-3 tablet:order-1">
+
+                    <h2 class="footer-company text-[#1b8f84] text-[14px] font-bold mb-[4px] uppercase">
+                        CÔNG TY TNNH THIẾT KẾ XÂY DỰNG NGUYỄN LÊ
+                    </h2>
+
+                    <p class="footer-title uppercase text-[13px] text-[#696969]">Việt Nam :</p>
+                    <p class="footer-content text-[13px] text-[#696969]">
+                        Trụ sở : 563/13 Lê Văn Khương, P.Hiệp Thành, Q.12.
+                        <br>
+                        Tel: 0123 456 789 - 0123 456 789 KTS: Nguyễn Trọng Nghĩa.
+                        <br>
+                        Fax: 0123 456 789.
+                        <br>
+                        VPGD: P1901_Lầu 19 tòa nhà Saigon Trade Center_37 Tôn Đức Thắng, Q.1, TP.HCM.
+                        <br>
+                        Tel: 0123 456 789.
+                        <br>
+                        Fax: 0123 456 789.
+                        <br>
+                        CN2: Đường N23, Khu TĐC sân bay Long Thành, X. Lộc An, H. Long Thành, Đồng Nai
+                        <br>
+                        AUSTRALIA :
+                        <br>
+                        VPĐD : 03 Carabeen street, Cabramatta Road, NSW 2166 Australia.
+                        <br>
+                        TEL : +61 406 577 979 Mr. Thiện Tâm.
+
+                    </p>
+                    <p class="footer-mailto text-[13px] text-[#696969]">
+                        Mail: <a href="mailto:info@xaydungnguyenle.vn"
+                            class="hover:no-underline hover:text-[#d00] transition-colors duration-300">info@xaydungnguyenle.vn</a>
+                    </p>
+                    <p class="footer-website text-[13px] text-[#696969]">
+                        Website: <a href="https://ricpham.github.io/xaydungnguyenle/"
+                            class="hover:no-underline hover:text-[#d00] transition-colors duration-300">www.ricpham.github.io/xaydungnguyenle/</a>
+                    </p>
+
+
+                </div>
+                <!-- Col Two -->
+                <div class="col-xs-12 col-md-3 col-lg-3 pl-0 mobile:order-1 tablet:order-2">
+                    <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                        Kết nối với chúng tôi
+                    </h2>
+
+                    <div class="footer-icon">
+                        <a href="#" class="pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/tiktok_icon.png" class="inline opacity-50 hover:opacity-100"
+                                alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/instagram_icon.png"
+                                class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/twitter_icon.png" class="inline opacity-50 hover:opacity-100"
+                                alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/facebook_icon.png"
+                                class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/youtube_icon.png" class="inline opacity-50 hover:opacity-100"
+                                alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] inline-block">
+                            <img src="assets/images/footer/pinterest_icon.png"
+                                class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+                    </div>
+
+                    <div class="footer-sharing pt-[16px]">
+                        <!-- Your like button code -->
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+                            data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+                    </div>
+                </div>
+
+                <!-- Col Three -->
+                <div class="col-xs-12 col-md-4 col-lg-4 pl-0 mobile:pb-[16px] mobile:order-2 tablet:order-3">
+                    <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                        Đăng ký tư vấn miễn phí
+                    </h2>
+
+                    <form action="" id="form_footer">
+                        <label for="">
+                            Vui lòng gửi yêu cầu tư vấn tại đây
+                        </label>
+
+                        <div class="mb-3">
+                            <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input type="text" name="phone" class="form-control" placeholder="Số điện thoại">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea name="content" id="" class="form-control cols=" 10" rows="3"
+                                placeholder="Nhập nội dung tại đây"></textarea>
+                        </div>
+
+                        <input type="submit"
+                            class="btn bg-[#1b8f84] text-white hover:opacity-80 transition-all duration-300"
+                            value="Gửi câu hỏi">
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="row border-solid border-t-[2px] border-[#25bdad] w-[calc(100%+15px)] overflow-x-hidden laptop:pt-[12px]">
+
+                <div class="col-xs-12 col-md-6 pl-0">
+                    <p class="mobile:text-center laptop:text-left text-[#696969] text-[14px]">
+                        <span class="font-semibold">0988 7777 92 (Zalo&amp;Fb) - 0981 7777 97 - 0987 7777
+                            97</span>&nbsp;
+                        <strong>(08h-18h)</strong>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">GĐ.KTS. <b class="uppercase">Nguyễn Trọng Nghĩa</b></span>
+                    </p>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <p class="mobile:text-center laptop:text-right text-[#696969] text-[14px]">
+                        Copyright © 2022 Nguyen Le Co., Ltd. All Rights Reserved.
+
+                        <span style="white-space: nowrap;">Developed by <a href="https://github.com/ricpham"
+                                class="hover:text-[#d00] hover:no-underline transition-colors duration-300">Ric
+                                Phạm</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Items -->
+        <!-- Đăng Ký Tư Vấn Button -->
+        <div id="ask-btn"
+            class="top-to-bottom fixed bottom-0 left-0 z-40 bg-[#d00] h-[44px] mobile:hidden tablet:block hover:cursor-pointer hover:opacity-80">
+            <img src="assets/images/fixed/ask.png" alt="">
+        </div>
+        <!-- Form Fixed Left -->
+        <div id="form-fixed" style="box-shadow: 0 0 3px 2px #ccc;"
+            class="bottom-to-top fixed bottom-0 left-0 z-50 bg-white border-solid border-[1px] border-[#ccc] p-2 mobile:hidden tablet:block">
+            <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                Đăng ký tư vấn miễn phí
+            </h2>
+
+            <form action="" id="form_ask">
+                <label for="">
+                    Vui lòng gửi yêu cầu tư vấn tại đây
+                </label>
+
+                <div class="mb-2">
+                    <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+                </div>
+
+                <div class="mb-2">
+
+                    <input type="text" name="phone" class="form-control" placeholder="Số điện thoại">
+                </div>
+
+                <div class="mb-2">
+
+                    <textarea name="content" id="" class="form-control cols=" 10" rows="2"
+                        placeholder="Nhập nội dung tại đây"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <input type="submit"
+                            class="btn bg-[#1b8f84] text-white hover:opacity-80 transition-all duration-300"
+                            value="Gửi câu hỏi">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div id="btn-close"
+                            class="btn bg-[#1b8f84] text-white hover:opacity-80 cursor-pointer transition-all duration-300">
+                            Đóng</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <button id="topBtn" title="Back to top"
+            class="fixed bottom-[12px] right-[12px] z-40 bg-[#1b8f84] h-[44px] w-[44px] mobile:hidden tablet:flex hover:cursor-pointer hover:opacity-50 rounded-full justify-center items-center">
+
+            <i
+                class="fa-solid fa-arrows-up-to-line text-[#d8eeec] text-[20px] hover:text-white transition-colors hover:animate-bounce duration-300"></i>
+        </button>
+
+        <!-- Fixed Phone Calling Mobile -->
+        <!-- <span class="desktop-phone"></span> -->
+        <a id="floating-mobile-phone" href="tel:+15555555555" class="animate-pulse duration-500 transition-all"></a>
+        <!-- End Fixed Items -->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/lazyload.js"></script>
+</body>
+
+</html>

@@ -52,6 +52,7 @@ a#floating-mobile-phone { display:none; }
     transition: 1s;
 }
 
+
 .top-to-bottom.active {
 
     transform: translateY(110%);
@@ -92,6 +93,12 @@ a#floating-mobile-phone { display:none; }
 
 .nav-item:hover .dropdown-menu{
     display: block;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+
+    background: inherit;
+    color: #aaa;
 }
 
 
@@ -193,7 +200,7 @@ a#floating-mobile-phone { display:none; }
 .card-desc--02::before {
 
     top: -8px;
-    left: -30px;
+    left: -15px;
     background-image: url(../images/section_02/quote_left.png);
     background-repeat: no-repeat;
     content: '';
@@ -207,7 +214,7 @@ a#floating-mobile-phone { display:none; }
 .card-desc--02::after {
 
     bottom: 0;
-    right: 0;
+    right: 20px;
     background-image: url(../images/section_02/quote_right.png);
     background-repeat: no-repeat;
     content: '';
