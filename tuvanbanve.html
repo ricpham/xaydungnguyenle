@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ | Xây Dựng Nguyên Lê</title>
+    <link rel="icon" href="assets/images/header/logo_thumbnail.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="hJbLmUJX"></script>
+
+    <header>
+        <!-- Responsive Navbar -->
+        <nav class="navbar navbar-expand-xl bg-[#696969] nav-header fixed w-full z-50 p-0">
+            
+            <button class="navbar-toggler border-none py-[20px]" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+
+                <img src="assets/images/header/nav_mobile.png" alt="">
+            </button>
+
+            <a href="index.html" class="mobile:block laptop:hidden absolute top-0 right-[5%] z-50">
+                <img src="assets/images/header/logo_02.jpg" class="h-[80px]" alt="">
+            </a>
+    
+            <div class="collapse navbar-collapse text-white uppercase mobile:text-[16px] laptop:text-[12px] leading-[1rem] pt-[30px] mx-auto mobile:h-[800px] laptop:h-[60px] max-w-[1200px] relative" id="navbarSupportedContent">
+
+                <a href="index.html" class="mobile:hidden laptop:block absolute top-0 left-0 z-50">
+                    <img src="assets/images/header/logo_02.jpg" class="h-[110px]" alt="">
+                </a>
+
+                <ul class="navbar-nav mx-auto absolute mobile:left-0 laptop:left-auto laptop:right-0 mobile:w-full laptop:w-auto mobile:pl-[12px] laptop:pl-0 mobile:h-[1500px] tablet:h-full laptop:h-auto">
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none">
+                        <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="gioithieu.html" class="nav-link" id="navbarDropdown" role="button">
+                            Giới Thiệu
+                        </a>
+                        
+    
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="gioithieu.html" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                KTS. Nguyễn Trọng Nghĩa
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 02
+                            </a>
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 03</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="truyenthong.html" class="nav-link" id="navbarDropdown" role="button">
+                            TRUYỀN THÔNG
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="camnhan.html" class="nav-link" id="navbarDropdown" role="button">
+                            Cảm nhận KH
+                        </a>
+                        
+    
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="thietke.html" class="nav-link" id="navbarDropdown" role="button">
+                            Thiết kế
+                        </a>
+                        
+    
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 01
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 02
+                            </a>
+                            <a href="#" class="dropdown-item drop-item relative">
+                                <i class="fa-solid fa-angles-right absolute left-[5px] top-[50%] -translate-y-[50%] mobile:block laptop:hidden"></i>
+                                Con 03
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="thicong.html" class="nav-link" id="navbarDropdown" role="button">
+                            Thi công
+                        </a>
+                        
+    
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="#" class="dropdown-item drop-item">
+                                Con 01
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="xuonggo.html" class="nav-link" id="navbarDropdown" role="button">
+                            Xưởng gỗ
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="goidichvu.html" class="nav-link" id="navbarDropdown" role="button">
+                            Gói dịch vụ
+                        </a>
+                        
+    
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="goidichvu.html" class="dropdown-item drop-item">
+                                ĐƠN GIÁ THIẾT KẾ
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="hoatdongtintuc.html" class="nav-link" id="navbarDropdown" role="button">
+                            Hoạt động - tin tức
+                        </a>
+                        
+    
+                        <div class="dropdown-menu nav-drop text-white text-[12px] leading-[1rem]" aria-labelledby="navbarDropdown">
+                            <!-- Cầu nối Hover -->
+                            <div class="w-full h-[20px] bg-red-500 absolute -top-2 bg-transparent"></div>
+                            <a href="chitiethoatdongtintuc.html" class="dropdown-item drop-item">
+                                Hoạt Động Công Ty
+                            </a>
+                            <!-- Line divider -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a href="#" class="dropdown-item drop-item">Con 02</a>
+                            <a href="#" class="dropdown-item drop-item">Con 03</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 active mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="tuvanbanve.html" class="nav-link" id="navbarDropdown" role="button">
+                            Tư vấn bản vẽ
+                        </a>
+                        
+                    </li>
+
+                    <li class="nav-item mobile:py-[8px] laptop:py-0 mobile:border-t-[1px] mobile:border-[#ccc] mobile:border-dotted laptop:border-none dropdown nav-border">
+                        <a href="#" class="nav-link" id="navbarDropdown" role="button">
+                            Liên hệ
+                        </a>
+                        
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner pb-2 border-b-2 solid border-[#25bdad]">
+            <div class="owl-carousel owl-theme owl-banner relative">
+                <!-- Item 1 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_01.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+
+                <!-- Item 2 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_02.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+
+                <!-- Item 3 -->
+                <div class="laptop-sm:h-[800px]">
+                    <img src="assets/images/header/banner/banner_03.jpg" class="object-cover -mt-[10%]" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <!-- Hoạt động công ty -->
+        <section class="section-thirteen mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%] pt-[25px]">
+            <div class="section-header mobile:w-[94%] tablet:w-full flex justify-between items-center ml-[14px]">
+                <a href="tuvanbanve.html" class="section-title uppercase bg-[#1b8f84] inline-block text-white text-[15px] leading-[23px] relative min-w-[100px] px-[34px] py-[2px] hover:bg-[#25bdad] transition-colors duration-300 -ml-[3px]">
+                    <span class="section-text font-['Myriad-Pro'] text-center">Tư Vấn Bản Vẽ</span>
+                </a>
+
+            </div>
+
+            <div class="section-content mt-[12px]">
+
+                <!-- Item -->
+                <div class="post-item">
+                    <a href="chitiettuvanbanve.html" class="text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] font-semibold transition-colors duration-300 uppercase">
+
+                        <h3 class="text-[28px] leading-[36px] my-[12px]">
+                            BÀN GIAO CÔNG TRÌNH XÂY MỚI NHÀ CÔ NGUYỆT
+                        </h3>
+                    </a>
+    
+                    <div class="row mb-[20px]">
+                        <div class="col-xs-12 col-md-3 mb-[12px]">
+                            <a href="chitiettuvanbanve.html" class="hover:opacity-80 transition-all duration-300">
+                                <img src="assets/images/section_13/image_01.jpg" class="" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            
+                            <p class="italic text-justify text-[#696969] text-[14px] leading-[18px] mb-[4px]">Sau khi ký hợp đồng thiết kế và thi công thì ngày 07/07//2022 vừa qua, nhân viên của Xây Dựng Nguyễn Lê đã đến nhà chị cô Nguyệt để bàn giao công trình xây mới.</p>
+                            <a href="chitiettuvanbanve.html" class="text-[15px] font-['Myriad-Pro'] text-[#d00] hover:no-underline hover:text-[#25bdad] hover:opacity-80 transition-all duration-300 flex items-center">
+                                Chi tiết
+                                <i class="fa-solid fa-angle-right ml-[4px]"></i>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Section Line -->
+                    <div class="section-line mt-[12px] bg-[#25bdad] h-[1px] w-[calc(100%-15px)]"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="post-item">
+                    <a href="chitiettuvanbanve.html" class="text-[15px] font-['Myriad-Pro'] text-[#25bdad] hover:no-underline hover:text-[#d00] font-semibold transition-colors duration-300 uppercase">
+
+                        <h3 class="text-[28px] leading-[36px] my-[12px]">
+                            BÀN GIAO CÔNG TRÌNH XÂY MỚI NHÀ CÔ NGUYỆT
+                        </h3>
+                    </a>
+    
+                    <div class="row mb-[20px]">
+                        <div class="col-xs-12 col-md-3 mb-[12px]">
+                            <a href="chitiettuvanbanve.html" class="hover:opacity-80 transition-all duration-300">
+                                <img src="assets/images/section_13/image_02.jpg" class="" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            
+                            <p class="italic text-justify text-[#696969] text-[14px] leading-[18px] mb-[4px]">Sau khi ký hợp đồng thiết kế và thi công thì ngày 07/07//2022 vừa qua, nhân viên của Xây Dựng Nguyễn Lê đã đến nhà chị cô Nguyệt để bàn giao công trình xây mới.</p>
+                            <a href="chitiettuvanbanve.html" class="text-[15px] font-['Myriad-Pro'] text-[#d00] hover:no-underline hover:text-[#25bdad] hover:opacity-80 transition-all duration-300 flex items-center">
+                                Chi tiết
+                                <i class="fa-solid fa-angle-right ml-[4px]"></i>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- Section Line -->
+                    <div class="section-line mt-[12px] bg-[#25bdad] h-[1px] w-[calc(100%-15px)]"></div>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+        <!-- End Hoạt động công ty -->
+
+    </div>
+
+    <footer>
+        <div class="footer-wrapper mobile:mx-[8%] tablet:mx-[5%] laptop:mx-[10%] py-[25px]">
+            <div class="footer-row row py-[10px] border-double border-t-[5px] border-[#25bdad] w-[calc(100%+15px)] overflow-x-hidden">
+                <!-- Col One -->
+                <div class="col-xs-12 col-md-5 col-lg-5 pl-0 mobile:order-3 tablet:order-1">
+
+                    <h2 class="footer-company text-[#1b8f84] text-[14px] font-bold mb-[4px] uppercase">
+                        CÔNG TY TNNH THIẾT KẾ XÂY DỰNG NGUYỄN LÊ
+                    </h2>
+
+                    <p class="footer-title uppercase text-[13px] text-[#696969]">Việt Nam :</p>
+                    <p class="footer-content text-[13px] text-[#696969]">
+                        Trụ sở : 563/13 Lê Văn Khương, P.Hiệp Thành, Q.12.
+                        <br>
+                        Tel: 0123 456 789 - 0123 456 789 KTS: Nguyễn Trọng Nghĩa.
+                        <br>
+                        Fax: 0123 456 789.
+                        <br>
+                        VPGD: P1901_Lầu 19 tòa nhà Saigon Trade Center_37 Tôn Đức Thắng, Q.1, TP.HCM.
+                        <br>
+                        Tel: 0123 456 789.
+                        <br>
+                        Fax: 0123 456 789.
+                        <br>
+                        CN2: Đường N23, Khu TĐC sân bay Long Thành, X. Lộc An, H. Long Thành, Đồng Nai
+                        <br>
+                        AUSTRALIA :
+                        <br>
+                        VPĐD : 03 Carabeen street, Cabramatta Road, NSW 2166 Australia.
+                        <br>
+                        TEL : +61 406 577 979 Mr. Thiện Tâm.
+                          
+                    </p>
+                    <p class="footer-mailto text-[13px] text-[#696969]">
+                        Mail: <a href="mailto:info@xaydungnguyenle.vn" class="hover:no-underline hover:text-[#d00] transition-colors duration-300">info@xaydungnguyenle.vn</a>
+                    </p>
+                    <p class="footer-website text-[13px] text-[#696969]">
+                        Website: <a href="https://ricpham.github.io/xaydungnguyenle/" class="hover:no-underline hover:text-[#d00] transition-colors duration-300">www.ricpham.github.io/xaydungnguyenle/</a>
+                    </p>
+                    
+                    
+
+                </div>
+                <!-- Col Two -->
+                <div class="col-xs-12 col-md-3 col-lg-3 pl-0 mobile:order-1 tablet:order-2">
+                    <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                        Kết nối với chúng tôi
+                    </h2>
+                    
+                    <div class="footer-icon">
+                        <a href="#" class="pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/tiktok_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/instagram_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/twitter_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/facebook_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] pr-[8px] border-r-[1px] solid border-[#999] inline-block">
+                            <img src="assets/images/footer/youtube_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+
+                        <a href="#" class="pl-[3px] inline-block">
+                            <img src="assets/images/footer/pinterest_icon.png" class="inline opacity-50 hover:opacity-100" alt="">
+                        </a>
+                    </div>
+
+                    <div class="footer-sharing pt-[16px]">
+                        <!-- Your like button code -->
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+                    </div>
+                </div>
+
+                <!-- Col Three -->
+                <div class="col-xs-12 col-md-4 col-lg-4 pl-0 mobile:pb-[16px] mobile:order-2 tablet:order-3">
+                    <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                        Đăng ký tư vấn miễn phí
+                    </h2>
+
+                    <form action="" id="form_footer">
+                        <label for="">
+                            Vui lòng gửi yêu cầu tư vấn tại đây
+                        </label>
+
+                        <div class="mb-3">
+                            <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input type="text" name="phone" class="form-control" placeholder="Số điện thoại">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea name="content" id="" class="form-control cols="10" rows="3" placeholder="Nhập nội dung tại đây"></textarea>
+                        </div>
+
+                        <input type="submit" class="btn bg-[#1b8f84] text-white hover:opacity-80 transition-all duration-300" value="Gửi câu hỏi">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row border-solid border-t-[2px] border-[#25bdad] w-[calc(100%+15px)] overflow-x-hidden laptop:pt-[12px]">
+
+                <div class="col-xs-12 col-md-6 pl-0">
+                    <p class="mobile:text-center laptop:text-left text-[#696969] text-[14px]">
+                        <span class="font-semibold">0988 7777 92 (Zalo&amp;Fb) - 0981 7777 97 - 0987 7777 97</span>&nbsp; 
+                        <strong>(08h-18h)</strong>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">GĐ.KTS. <b class="uppercase">Nguyễn Trọng Nghĩa</b></span>
+                    </p>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <p class="mobile:text-center laptop:text-right text-[#696969] text-[14px]">
+                        Copyright © 2022 Nguyen Le Co., Ltd. All Rights Reserved.
+                        
+                        <span style="white-space: nowrap;">Developed by <a href="https://github.com/ricpham" class="hover:text-[#d00] hover:no-underline transition-colors duration-300">Ric Phạm</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Items -->
+        <!-- Đăng Ký Tư Vấn Button -->
+        <div id="ask-btn" class="top-to-bottom fixed bottom-0 left-0 z-40 bg-[#d00] h-[44px] mobile:hidden tablet:block hover:cursor-pointer hover:opacity-80">
+            <img src="assets/images/fixed/ask.png" alt="">
+        </div>
+        <!-- Form Fixed Left -->
+        <div id="form-fixed" style="box-shadow: 0 0 3px 2px #ccc;" class="bottom-to-top fixed bottom-0 left-0 z-50 bg-white border-solid border-[1px] border-[#ccc] p-2 mobile:hidden tablet:block">
+            <h2 class="footer-social text-[#1b8f84] text-[14px] font-bold mb-[6px] uppercase">
+                Đăng ký tư vấn miễn phí
+            </h2>
+
+            <form action="" id="form_ask">
+                <label for="">
+                    Vui lòng gửi yêu cầu tư vấn tại đây
+                </label>
+
+                <div class="mb-2">
+                    <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+                </div>
+
+                <div class="mb-2">
+
+                    <input type="text" name="phone" class="form-control" placeholder="Số điện thoại">
+                </div>
+
+                <div class="mb-2">
+
+                    <textarea name="content" id="" class="form-control cols="10" rows="2" placeholder="Nhập nội dung tại đây"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <input type="submit" class="btn bg-[#1b8f84] text-white hover:opacity-80 transition-all duration-300" value="Gửi câu hỏi">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div id="btn-close" class="btn bg-[#1b8f84] text-white hover:opacity-80 cursor-pointer transition-all duration-300">Đóng</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <button id="topBtn" title="Back to top" class="fixed bottom-[12px] right-[12px] z-40 bg-[#1b8f84] h-[44px] w-[44px] mobile:hidden tablet:flex hover:cursor-pointer hover:opacity-50 rounded-full justify-center items-center">
+            
+            <i class="fa-solid fa-arrows-up-to-line text-[#d8eeec] text-[20px] hover:text-white transition-colors hover:animate-bounce duration-300"></i>
+        </button>
+
+        <!-- Fixed Phone Calling Mobile -->
+        <!-- <span class="desktop-phone"></span> -->
+        <a id="floating-mobile-phone" href="tel:+15555555555" class="animate-pulse duration-500 transition-all"></a>
+        <!-- End Fixed Items -->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="assets/js/owl.carousel.min.js"></script> 
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lazyload.js"></script>
+
+</body>
+
+</html>
